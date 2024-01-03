@@ -1,7 +1,12 @@
 .MuiButton-root {
   all: unset;
-  background-color: gainsboro;
+  box-sizing: border-box;
+  background-color: white;
+  background-clip: padding-box;
+  box-shadow: 0 1px 1px hsl(229 50% 10% / 5%), 0 1px 3px hsl(229 50% 10% / 1.5%);
+  border: 1px solid var(--neutral-a5);
   font-family: untitled sans;
+  color: var(--neutral-12);
   font-weight: 500;
   height: 32px;
   vertical-align: middle;
@@ -9,5 +14,20 @@
   padding-left: 12px;
   padding-right: 12px;
   font-size: 14px;
-  -webkit-tap-highlight-color: rgba(0,0,0,);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.MuiButton-root:hover {
+  border-color: var(--neutral-a7);
+}
+
+.Mui-active {
+  background-color: var(--neutral-a1);
+  border-color: var(--neutral-a7);
+  box-shadow: none;
+}
+
+.Mui-focusVisible {
+  outline: 2px solid var(--neutral-a8);
+  outline-offset: 2px;
 }
