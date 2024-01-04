@@ -1,4 +1,4 @@
-.MuiButton-root {
+.Button {
   all: unset;
   box-sizing: border-box;
   background-color: white;
@@ -17,18 +17,18 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.MuiButton-root:hover {
+.Button:hover {
   border-color: var(--neutral-a7);
   box-shadow: 0 1px 2px hsl(229 50% 10% / 6%), 0 1px 3px hsl(229 50% 10% / 3%);
 }
 
-.MuiButton-root.Mui-active {
+.Button.Mui-active {
   background-color: var(--neutral-a1);
   border-color: var(--neutral-a7);
   box-shadow: none;
 }
 
-.MuiButton-root.Mui-focusVisible {
+.Button.Mui-focusVisible {
   outline: 2px solid var(--neutral-a8);
   outline-offset: 2px;
 }
