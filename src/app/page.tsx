@@ -9,6 +9,11 @@ import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 import { Slider } from '@mui/base/Slider';
 import { Input } from '@mui/base/Input';
 
+import { Select, selectClasses, SelectRootSlotProps } from '@mui/base/Select';
+import { Option, optionClasses } from '@mui/base/Option';
+import { useTheme } from '@mui/system';
+import UnfoldMoreRoundedIcon from '@mui/icons-material/UnfoldMoreRounded';
+
 export default function Home() {
   return (
     <main>
@@ -18,6 +23,9 @@ export default function Home() {
           flexDirection: 'column',
           alignItems: 'center',
           gap: 40,
+          width: 500,
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}>
         <Button
           slotProps={{
@@ -82,6 +90,29 @@ export default function Home() {
           }}
           placeholder="Type something"
         />
+
+        <Select
+          className="Select"
+          slots={{
+            root: Button,
+          }}
+          slotProps={{
+            listbox: { className: 'SelectListbox' },
+            popper: { className: 'SelectPopper' },
+          }}
+          defaultValue={10}
+        >
+          <Option className="SelectOption" value={10}>
+            Documentation
+          </Option>
+          <Option className="SelectOption" value={20}>
+            Components
+          </Option>
+          <Option className="SelectOption" value={30}>
+            Features
+          </Option>
+        </Select>
+
         <TextareaAutosize
           className="Textarea"
           placeholder="Auto-resizing textarea"

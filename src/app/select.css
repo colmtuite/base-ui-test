@@ -1,0 +1,71 @@
+.Select {
+  all: unset;
+  font-family: untitled sans;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 32px;
+  border-radius: 6px;
+  text-align: left;
+  line-height: 1;
+  background: white;
+  background-clip: padding-box;
+  box-shadow: 0 1px 1px hsl(229 50% 10% / 5%), 0 1px 3px hsl(229 50% 10% / 1.5%);
+  border: 1px solid var(--neutral-a5);
+  color: var(--neutral-12);
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  user-select: none;
+}
+
+.Select:hover {
+  border-color: var(--neutral-a7);
+  box-shadow: 0 1px 2px hsl(229 50% 10% / 6%), 0 1px 3px hsl(229 50% 10% / 3%);
+}
+
+.Select.Mui-focusVisible {
+  outline: 2px solid var(--neutral-a8);
+  outline-offset: 2px;
+}
+
+.SelectListbox {
+  box-sizing: border-box;
+  padding: 6px;
+  margin: 12px 0;
+  border-radius: 12px;
+  overflow: auto;
+  outline: none;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid var(--neutral-a4);
+  box-shadow:
+    0 4px 12px 0 var(--neutral-a3),
+    0 12px 48px -4px var(--neutral-a3),
+    0 24px 64px -8px var(--neutral-a3);
+}
+
+.SelectOption {
+  list-style: none;
+  font-family: untitled sans;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: default;
+  user-select: none;
+}
+
+.SelectOption.Mui-selected {
+  background-color: var(--neutral-12);
+  color: white;
+}
+
+.SelectOption:focus-visible {
+  outline: 2px solid var(--neutral-12);
+}
+
+.SelectOption.Mui-disabled {
+  color: var(--neutral-8);
+}

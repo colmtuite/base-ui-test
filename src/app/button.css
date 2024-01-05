@@ -16,6 +16,7 @@
   font-size: 14px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   flex-shrink: 0;
+  user-select: none;
 }
 
 .Button:hover {
