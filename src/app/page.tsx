@@ -5,6 +5,7 @@ import { Menu } from '@mui/base/Menu';
 import { MenuItem } from '@mui/base/MenuItem';
 import { MenuButton } from '@mui/base/MenuButton';
 import { Dropdown } from '@mui/base/Dropdown';
+import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
           }}
         />
         <Dropdown>
-          <MenuButton className="DropdownMenu-trigger">Dropdown</MenuButton>
+          <MenuButton className="Button">Dropdown</MenuButton>
 
           <Menu
             className="CustomMenuIntroduction"
@@ -71,6 +72,10 @@ export default function Home() {
             </MenuItem>
           </Menu>
         </Dropdown>
+        <TextareaAutosize
+          className="Textarea"
+          placeholder="Auto-resizing textarea"
+        />
       </div>
     </main>
   )
