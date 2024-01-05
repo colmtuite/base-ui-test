@@ -7,6 +7,7 @@ import { MenuButton } from '@mui/base/MenuButton';
 import { Dropdown } from '@mui/base/Dropdown';
 import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 import { Slider } from '@mui/base/Slider';
+import { Input } from '@mui/base/Input';
 
 export default function Home() {
   return (
@@ -74,18 +75,26 @@ export default function Home() {
             </MenuItem>
           </Menu>
         </Dropdown>
+        <Input
+          slotProps={{
+            root: { className: 'TextFieldRoot' },
+            input: { className: 'TextFieldInput' }
+          }}
+          placeholder="Type something"
+        />
         <TextareaAutosize
           className="Textarea"
           placeholder="Auto-resizing textarea"
         />
         <Slider
+          defaultValue={[20, 37]}
+          step={10}
           slotProps={{
             root: { className: 'Slider' },
             rail: { className: 'SliderRail' },
             track: { className: 'SliderTrack' },
             thumb: { className: 'SliderThumb', tabIndex: 0 },
           }}
-          defaultValue={50}
         />
       </div>
     </main>

@@ -22,7 +22,7 @@
 
 .Textarea:focus-visible {
   outline: 2px solid var(--neutral-a8);
-  outline-offset: 2px;
+  outline-offset: -1px;
 }
 
 .Textarea::placeholder {
