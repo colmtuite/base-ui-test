@@ -1,10 +1,11 @@
 @import "theme.css";
 @import "reset.css";
 
-@import "button.css";
-@import "dropdown-menu.css";
-@import "select.css";
-@import "slider.css";
-@import "switch.css";
-@import "textarea.css";
-@import "text-field.css";
+@import "components/button.css";
+@import "components/dropdown-menu.css";
+@import "components/number-field.css";
+@import "components/select.css";
+@import "components/slider.css";
+@import "components/switch.css";
+@import "components/textarea.css";
+@import "components/text-field.css";

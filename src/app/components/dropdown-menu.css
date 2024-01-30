@@ -1,11 +1,11 @@
-.DropdownMenu-listbox {
+.DropdownMenuPopup {
   box-sizing: border-box;
   padding: 6px;
-  margin: 12px 0;
+  /* margin: 12px 0; */
   min-width: 200px;
   border-radius: 12px;
-  overflow: auto;
-  outline: 0px;
+  /* overflow: auto; */
+  /* outline: 0px; */
   background: white;
   color: black;
   box-shadow:
@@ -15,7 +15,15 @@
     0 24px 64px -8px var(--neutral-a3);
 }
 
-.DropdownMenu-item {
+.DropdownMenuListbox {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.DropdownMenuItem {
   all: unset;
   display: flex;
   align-items: center;
@@ -27,11 +35,12 @@
   padding-left: 12px;
   padding-right: 12px;
   border-radius: 6px;
+  line-height: 1;
   user-select: none;
   color: var(--neutral-12);
 }
 
-.DropdownMenu-item.Mui-focusVisible {
+.DropdownMenuItem.Mui-focusVisible {
   background-color: var(--neutral-12);
   color: white;
 }

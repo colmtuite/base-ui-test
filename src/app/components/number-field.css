@@ -1,0 +1,56 @@
+.NumberField {
+  border-radius: 6px;
+  background: white;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px var(--neutral-a6);
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+  height: 32px;
+}
+
+.NumberFieldInput {
+  all: unset;
+  box-sizing: border-box;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-color: transparent;
+  border-radius: inherit;
+  font-family: untitled sans;
+  font-size: 14px;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  line-height: 1;
+  text-indent: 8px;
+  line-height: 32px;
+  height: 100%;
+  color: var(--neutral-12);
+  box-shadow: inset 0 1px 2px 0 var(--neutral-a3);
+}
+
+.NumberFieldRoot.Mui-focused .NumberFieldInput {
+  outline: 2px solid var(--neutral-a8);
+  outline-offset: -1px;
+}
+
+.NumberFieldInput::placeholder {
+  color: var(--neutral-9);
+}
+
+.NumberFieldIncrement,
+.NumberFieldDecrement {
+  all: unset;
+  box-sizing: border-box;
+  user-select: none;
+  width: 24px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--neutral-12);
+  border-left: 1px solid var(--neutral-a6);
+}
