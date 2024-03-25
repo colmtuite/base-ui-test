@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mui/base": "^5.0.0-beta.29",
+    "@mui/base": "https://pkg.csb.dev/mui/base-ui/commit/74c52c9e/@mui/base",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

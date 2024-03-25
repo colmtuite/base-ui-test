@@ -24,14 +24,14 @@
   box-shadow: 0 1px 2px hsl(229 50% 10% / 6%), 0 1px 3px hsl(229 50% 10% / 3%);
 }
 
-.Button.Mui-active,
+.Button:active,
 .Button.Mui-expanded {
   background-color: var(--neutral-a1);
   border-color: var(--neutral-a7);
   box-shadow: none;
 }
 
-.Button.Mui-focusVisible {
+.Button:focus-visible {
   outline: 2px solid var(--neutral-a8);
   outline-offset: 2px;
 }
