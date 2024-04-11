@@ -1,10 +1,10 @@
-import * as React from "react";
-import { Checkbox as BUICheckbox } from "@mui/base/Checkbox";
+// import * as React from "react";
+// import { Checkbox as BUICheckbox } from "@mui/base/Checkbox";
 
-export const Checkbox = (props) => {
-  return (
-    <BUICheckbox {...props} className="CheckboxRoot">
-      <BUICheckbox.Indicator className="CheckboxIndicator" />
-    </BUICheckbox>
-  );
-};
+// export const Checkbox = (props) => {
+//   return (
+//     <BUICheckbox {...props} className="CheckboxRoot">
+//       <BUICheckbox.Indicator className="CheckboxIndicator" />
+//     </BUICheckbox>
+//   );
+// };

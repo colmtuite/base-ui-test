@@ -35,3 +35,11 @@
   outline: 2px solid var(--neutral-a8);
   outline-offset: 2px;
 }
+
+.Button:disabled {
+  background-color: var(--neutral-1);
+  color: var(--neutral-8);
+  cursor: not-allowed;
+  box-shadow: none;
+  border-color: var(--neutral-a5);
+}

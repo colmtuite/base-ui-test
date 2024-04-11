@@ -1,14 +1,19 @@
 "use client";
 import * as React from "react";
 import {
-  Switch,
-  Checkbox,
-  NumberFieldInput,
-  NumberField,
-  NumberFieldDecrement,
-  NumberFieldIncrement,
-  NumberFieldScrubber,
-  NumberFieldGroup,
+  // Switch,
+  // Checkbox,
+  // NumberFieldInput,
+  // NumberField,
+  // NumberFieldDecrement,
+  // NumberFieldIncrement,
+  // NumberFieldScrubber,
+  // NumberFieldGroup,
+  Tabs,
+  TabsList,
+  TabsTab,
+  TabsPanel,
+  TabsIndicator,
 } from "./components";
 
 export default function Home() {
@@ -21,7 +26,7 @@ export default function Home() {
           marginRight: "auto",
         }}
       >
-        <div
+        {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -32,8 +37,8 @@ export default function Home() {
           <Switch />
           <Switch disabled />
           <Switch defaultChecked disabled />
-        </div>
-        <div
+        </div> */}
+        {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -45,8 +50,8 @@ export default function Home() {
           <Checkbox disabled />
           <Checkbox defaultChecked disabled />
           <Checkbox indeterminate />
-        </div>
-        <NumberField
+        </div> */}
+        {/* <NumberField
           defaultValue={0}
           id="amount"
           min={0}
@@ -86,7 +91,27 @@ export default function Home() {
               style={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
             />
           </NumberFieldGroup>
-        </NumberField>
+        </NumberField> */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 40,
+            marginBottom: 40,
+          }}
+        >
+          <Tabs>
+            <TabsList>
+              <TabsTab>Tab One</TabsTab>
+              <TabsTab>Tab Two</TabsTab>
+              <TabsTab>Tab Three</TabsTab>
+              {/* <TabsIndicator /> */}
+            </TabsList>
+            <TabsPanel>Panel One</TabsPanel>
+            <TabsPanel>Panel Two</TabsPanel>
+            <TabsPanel>Panel Three</TabsPanel>
+          </Tabs>
+        </div>
       </div>
     </main>
   );

@@ -63,8 +63,35 @@ export const NumberFieldDecrement = (props) => {
 
 export const NumberFieldScrubber = (props) => {
   return (
-    <BUINumberField.ScrubArea {...props} className="NumberFieldScrubber">
+    <BUINumberField.ScrubArea
+      {...props}
+      className="NumberFieldScrubber"
+      direction="horizontal"
+      format={{
+        style: "currency",
+        currency: "USD",
+      }}
+      teleportDistance={300}
+    >
       {props.children}
+      <BUINumberField.ScrubAreaCursor>
+        <span style={{ filter: "drop-shadow(2px 0 2px rgb(0 0 0 / 0.3))" }}>
+          <svg
+            width="26"
+            height="14"
+            viewBox="0 0 24 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            shapeRendering="crispEdges"
+          >
+            <path
+              d="M19.3382 3.00223V5.40757L13.0684 5.40757L13.0683 5.40757L6.59302 5.40964V3V1.81225L5.74356 2.64241L1.65053 6.64241L1.28462 7L1.65053 7.35759L5.74356 11.3576L6.59302 12.1878V11L6.59302 8.61585L13.0684 8.61585H19.3382V11V12.1741L20.1847 11.3605L24.3465 7.36049L24.7217 6.9999L24.3464 6.63941L20.1846 2.64164L19.3382 1.82862V3.00223Z"
+              fill="black"
+              stroke="white"
+            />
+          </svg>
+        </span>
+      </BUINumberField.ScrubAreaCursor>
     </BUINumberField.ScrubArea>
   );
 };
@@ -72,23 +99,3 @@ export const NumberFieldScrubber = (props) => {
 export const NumberFieldInput = (props) => {
   return <BUINumberField.Input {...props} className="TextField" />;
 };
-
-// export const NumberFieldInput = React.forwardRef<NumberFieldInput>(
-//   ({ className, children, ...props }, forwardedRef) => (
-//     <BUINumberField.Input {...props} />
-//   )
-// );
-
-// export const DropdownMenu = React.forwardRef<BUIMenu>(
-//   ({ className, children, ...props }, forwardedRef) => (
-//     <BUIMenu
-//       slotProps={{
-//         root: { className: "DropdownMenuPopup" },
-//         listbox: { className: "DropdownMenuListbox" },
-//       }}
-//       {...props}
-//     >
-//       {children}
-//     </BUIMenu>
-//   )
-// );
